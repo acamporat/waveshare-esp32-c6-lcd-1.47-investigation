@@ -1,0 +1,94 @@
+I (198) boot: Set actual ota_seq=1 in otadata[0]
+I (199) boot: Disabling RNG early entropy source...
+I (200) cpu_start: Unicore app
+I (202) cpu_start: Pro cpu up.
+W (217) clk: esp_perip_clk_init() has not been implemented yet
+I (217) cpu_start: Pro cpu start user code
+I (218) cpu_start: cpu freq: 160000000 Hz
+I (222) cpu_start: Application information:
+I (226) cpu_start: Project name:     build
+I (231) cpu_start: App version:      2024.11.0
+I (236) cpu_start: Compile time:     Oct  9 2026 22:46:27
+I (242) cpu_start: ELF file SHA256:  7b15a2b3de907637...
+I (248) cpu_start: ESP-IDF:          5.1.2
+I (253) cpu_start: Min chip rev:     v0.0
+I (258) cpu_start: Max chip rev:     v0.99
+I (263) cpu_start: Chip rev:         v0.1
+I (267) heap_init: Initializing. RAM available for dynamic allocation:
+I (275) heap_init: At 4080E3F0 len 0006E220 (440 KiB): D/IRAM
+I (281) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM
+I (288) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+I (295) spi_flash: detected chip: generic
+I (299) spi_flash: flash io: dio
+I (303) sleep: Configure to isolate all GPIO pins in sleep state
+I (310) sleep: Enable automatic switching of GPIO sleep configuration
+I (317) coexist: coex firmware version: b6d5e8c
+I (317) coexist: coexist rom version 5b8dcfa
+I (317) app_start: Starting scheduler on CPU0
+I (322) main_task: Started on CPU0
+I (322) main_task: Calling app_main()
+[D][esp-idf:000][main]: I (421) main_task: Returned from app_main()
+[I][app:029]: Running through setup()...
+[D][spi:035]: Setting up SPI bus...
+[C][st7789v:011]: Setting up SPI ST7789V...
+[D][spi_device:362]: mode 3, data_rate 4000kHz
+[D][esp-idf:000]: I (423) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+[D][esp-idf:000]: I (424) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+[D][esp-idf:000]: I (424) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+[D][esp-idf:000]: I (1031) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+[I][app:062]: setup() finished successfully!
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[I][app:100]: ESPHome version 2024.11.0 compiled on Oct  9 2026, 22:50:23
+[C][logger:185]: Logger:
+[C][logger:186]:   Level: DEBUG
+[C][logger:188]:   Log Baud Rate: 0
+[C][logger:189]:   Hardware UART: USB_SERIAL_JTAG
+[C][spi:064]: SPI bus:
+[C][spi:065]:   CLK Pin: GPIO7
+[C][spi:066]:   SDI Pin:
+[C][spi:067]:   SDO Pin: GPIO6
+[C][spi:072]:   Using HW SPI: SPI2_HOST
+[C][st7789v:124]: SPI ST7789V
+[C][st7789v:124]:   Rotations: 0 Â°
+[C][st7789v:124]:   Dimensions: 172px x 320px
+[C][st7789v:125]:   Model: CUSTOM
+[C][st7789v:126]:   Height: 320
+[C][st7789v:127]:   Width: 172
+[C][st7789v:128]:   Height Offset: 34
+[C][st7789v:129]:   Width Offset: 0
+[C][st7789v:130]:   8-bit color mode: NO
+[C][st7789v:131]:   CS Pin: GPIO14
+[C][st7789v:132]:   DC Pin: GPIO15
+[C][st7789v:133]:   Reset Pin: GPIO21
+[C][st7789v:134]:   B/L Pin: GPIO22
+[C][st7789v:135]:   Update Interval: 5.0s
+[C][st7789v:136]:   Data rate: 4MHz
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[I][test:019]: DIMMED12
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.
+[I][test:055]: ALIVE circle test
+[W][component:237]: Component display took a long time for an operation (362 ms).
+[W][component:238]: Components should block for at most 30 ms.

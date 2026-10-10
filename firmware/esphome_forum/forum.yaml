@@ -1,0 +1,55 @@
+esphome:
+  name: c6-forum-test
+  platformio_options:
+    build_flags:
+      - -DCONFIG_ESP_CONSOLE_UART_BAUDRATE=115200
+  build_path: .esphome/build/c6-forum-test
+  includes:
+    - dim_backlight.h
+  on_boot:
+    priority: -100
+    then:
+      - delay: 30s
+      - lambda: |-
+          dim_backlight();
+esp32:
+  board: esp32-c6-devkitc-1
+  variant: ESP32C6
+  flash_size: 4MB
+  framework:
+    type: esp-idf
+    version: 5.1.2
+    platform_version: 6.5.0
+logger:
+  hardware_uart: USB_SERIAL_JTAG
+  baud_rate: 0
+  level: DEBUG
+  on_message:
+    level: DEBUG
+    then:
+      - lambda: |-
+          puts(message);
+spi:
+  clk_pin: GPIO7
+  mosi_pin: GPIO6
+display:
+  - platform: st7789v
+    model: CUSTOM
+    dc_pin: GPIO15
+    height: 320
+    width: 172
+    offset_height: 34
+    offset_width: 0
+    cs_pin: GPIO14
+    reset_pin: GPIO21
+    backlight_pin: GPIO22
+    spi_mode: 3
+    data_rate: 4000000
+    id: tft_ha
+    lambda: |-
+      it.filled_circle(it.get_width() / 2, it.get_height() / 2, 20);
+interval:
+  - interval: 5s
+    then:
+      - lambda: |-
+          ESP_LOGI("test", "ALIVE circle test");

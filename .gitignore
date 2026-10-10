@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.esphome/
+.pio/
+build/
+runtime/
+backups/
+*.bin
+*.elf
+*.log
+.env
+secrets.yaml

@@ -1,0 +1,23 @@
+ACK STATUS mode=staged stage=0
+ALIVE mode=staged uptime_ms=14001 stage=0
+ALIVE mode=staged uptime_ms=15001 stage=0
+ALIVE mode=staged uptime_ms=16001 stage=0
+ALIVE mode=staged uptime_ms=17001 stage=0
+ALIVE mode=staged uptime_ms=18001 stage=0
+BEGIN RESET
+ACK RESET stage=1
+BEGIN INIT
+ALIVE mode=staged uptime_ms=19001 stage=1
+ACK INIT stage=2
+ACK BUSCHECK clocks8=8 clocks3840=3840
+ALIVE mode=staged uptime_ms=20001 stage=2
+ACK FILL FFFF
+ALIVE mode=staged uptime_ms=21001 stage=2
+ACK BUSCHECK clocks8=8 clocks3840=3840
+ALIVE mode=staged uptime_ms=22001 stage=2
+ALIVE mode=staged uptime_ms=23001 stage=2
+ACK FILL 0000
+ALIVE mode=staged uptime_ms=24001 stage=2
+ACK BUSCHECK clocks8=8 clocks3840=3840
+ALIVE mode=staged uptime_ms=25001 stage=2
+ACK FILL F800

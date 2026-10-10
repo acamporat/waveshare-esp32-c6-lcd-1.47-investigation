@@ -1,0 +1,74 @@
+{
+  "case.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -28.0,
+        -13.5,
+        0.0
+      ],
+      [
+        28.0,
+        12.71,
+        11.8
+      ]
+    ],
+    "extents_mm": [
+      56.0,
+      26.21,
+      11.8
+    ],
+    "volume_mm3": 3066.782429265901,
+    "triangles": 2400
+  },
+  "rear_stop.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -18.0,
+        0.0,
+        0.0
+      ],
+      [
+        18.0,
+        21.0,
+        9.0
+      ]
+    ],
+    "extents_mm": [
+      36.0,
+      21.0,
+      9.0
+    ],
+    "volume_mm3": 2861.6800912020003,
+    "triangles": 412
+  },
+  "saddle.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -28.0,
+        -22.0,
+        0.0
+      ],
+      [
+        28.0,
+        3.0,
+        48.0
+      ]
+    ],
+    "extents_mm": [
+      56.0,
+      25.0,
+      48.0
+    ],
+    "volume_mm3": 6526.9552650059995,
+    "triangles": 948
+  }
+}

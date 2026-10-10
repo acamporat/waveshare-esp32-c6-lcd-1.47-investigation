@@ -1,0 +1,25 @@
+{
+  "manifest.json": {
+    "file": "esphome-forum.factory.bin",
+    "offset": "0x0",
+    "size": 282784,
+    "sha256": "63ee0d5298eb6c69343527631a4a44e881c3878d57bdcfec222fc7dbab9146de",
+    "esphome": "2024.11.0",
+    "platform": "platformio/espressif32@6.5.0",
+    "framework": "ESP-IDF 5.1.2",
+    "framework_package": "framework-espidf@3.50102.240122",
+    "python": "3.12.15",
+    "driver_sha256": "7ebfd99e94c76e3fc38deefc90a090e1edd665ac77854075255dd91e8422a502",
+    "successful_log": "compile-usb-baud.log",
+    "compatibility_build_flag": "-DCONFIG_ESP_CONSOLE_UART_BAUDRATE=115200"
+  },
+  "manifest-polling.json": {
+    "file": "esphome-forum-polling.factory.bin",
+    "offset": "0x0",
+    "size": 283680,
+    "sha256": "2fcfcafb30c19fd1a4df0b48d97450622f0a67039582e5c9b3ba7cdde992eddc",
+    "successful_log": "compile-polling-usb.log",
+    "runtime_change": "logger baud_rate 0 plus on_message puts(message), using existing polling USB console; no display changes"
+  },
+  "publication_note": "Historical binary identities only; binaries and full build logs are not distributed. Public YAML changes only the build output path relative to the tested final source."
+}
